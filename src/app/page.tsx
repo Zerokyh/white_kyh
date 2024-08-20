@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import { Box, Button } from "@mui/material";
-import Modal from "@mui/material/Modal";
-import DropDownBox from "./conponents/atom/DropDownBox";
-import InputBox from "./conponents/atom/InputBox";
-import CheckBox from "./conponents/atom/CheckBox";
-import RegisterBox from "./conponents/molecules/RegisterBox";
+import * as React from 'react';
+import { Box, Button } from '@mui/material';
+import Modal from '@mui/material/Modal';
+import DropDownBox from './components/atom/DropDownBox';
+import InputBox from './components/atom/InputBox';
+import CheckBox from './components/atom/CheckBox';
+import RegisterBox from './components/molecules/RegisterBox';
 
 const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
   width: 330,
-  bgcolor: "background.paper",
+  bgcolor: 'background.paper',
   boxShadow: 24,
 };
 
@@ -24,16 +24,12 @@ export default function Home() {
   const handleClose = () => setOpen(false);
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <Button
-        variant="contained"
-        sx={{ width: "160px", borderRadius: 0 }}
-        onClick={handleOpen}
-      >
+      <Button variant="contained" sx={{ width: '160px', borderRadius: 0 }} onClick={handleOpen}>
         <Box
           sx={{
-            width: "100px",
-            display: "flex",
-            justifyContent: "space-around",
+            width: '100px',
+            display: 'flex',
+            justifyContent: 'space-around',
           }}
         >
           등록
